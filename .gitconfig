@@ -1,0 +1,16 @@
+[user]
+    name = Felix Baron
+    email = 45421716+felixbaron@users.noreply.github.com
+[core]
+    editor = vi 
+    excludesfile = ~/.gitignore
+[alias]
+    co = commit
+    st = status
+    pom = push origin HEAD
+    pomf = push origin HEAD --force
+    br = branch
+    aa = add --all
+    ad = commit --amend
+[credential]
+    helper = cache
