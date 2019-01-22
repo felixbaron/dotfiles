@@ -5,7 +5,7 @@
     editor = vi 
     excludesfile = ~/.gitignore
 [alias]
-    co = commit
+    co = checkout
     st = status
     pom = push origin HEAD
     pomf = push origin HEAD --force
