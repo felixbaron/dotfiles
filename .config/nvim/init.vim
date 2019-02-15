@@ -20,6 +20,7 @@ map <leader>n :NERDTreeToggle<CR>
 map <leader>cc :set cc=80<cr>
 map <leader>et :tabe <C-R>=expand('%:h').'/'<cr>
 map <leader>v :e ~/.config/nvim/init.vim<CR>
+map <leader>y :silent !open -a /Applications/Marked\ 2.app '%:p'<cr>
 map <Esc><Esc> :w<CR>
 
 " Switch modes in terminal
