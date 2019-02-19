@@ -31,3 +31,6 @@ typings/
 
 # next.js build output
 .next
+
+# Mac system files
+.DS_Store
