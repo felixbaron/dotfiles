@@ -13,8 +13,12 @@ map <leader><right> :bn<CR>
 map <leader><up> :b #<CR>
 map <leader><down> :bd<CR>
 map <leader>- :q<CR>
+map <leader>1 :cprevious<CR>
+map <leader>2 :cnext<CR>
+map <leader>3 :copen<CR>
+map <leader>at :vimgrep /TODO/ **<CR>
 map <leader>g :ALEGoToDefinition<CR>
-map <leader>t :terminal<CR>
+map <leader>c :terminal<CR>
 map <leader>k :TagbarToggle<CR>
 map <leader>n :NERDTreeToggle<CR>
 map <leader>cc :set cc=80<cr>
@@ -39,6 +43,7 @@ Plug 'sickill/vim-monokai'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'majutsushi/tagbar'
+Plug 'vim-scripts/TaskList.vim'
 call plug#end()
 
 " Configurations
