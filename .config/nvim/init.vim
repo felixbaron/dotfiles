@@ -16,7 +16,7 @@ map <leader>- :q<CR>
 map <leader>1 :cprevious<CR>
 map <leader>2 :cnext<CR>
 map <leader>3 :copen<CR>
-map <leader>at :vimgrep /TODO/ **<CR>
+map <leader>t :vimgrep /TODO/ **<CR>:copen<CR>
 map <leader>g :ALEGoToDefinition<CR>
 map <leader>c :terminal<CR>
 map <leader>k :TagbarToggle<CR>
@@ -34,16 +34,17 @@ tnoremap <Esc> <C-\><C-n>
 call plug#begin('~/.vim/plugged')
 Plug 'w0rp/ale'
 Plug 'kien/ctrlp.vim'
+Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'bling/vim-bufferline'
+Plug 'pangloss/vim-javascript'
 Plug 'sickill/vim-monokai'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'majutsushi/tagbar'
-Plug 'vim-scripts/TaskList.vim'
 call plug#end()
 
 " Configurations
@@ -54,7 +55,7 @@ set tabstop=2 expandtab
 let g:ctrlp_show_hidden = 1
 set number
 set autoindent
-set wildignore+=*/.next/*,*/.c9/*,*/dist/*,*/node_modules/*,*/_next/*
+set wildignore+=*/.next/*,*/.c9/*,*/dist/*,*/node_modules/*,*/_next/*,*/coverage/*,.DS_Store
 let g:python_host_prog='/usr/bin/python2'
 let g:python3_host_prog='/usr/bin/python3'
 let g:prettier#autoformat = 0
